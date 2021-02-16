@@ -30,7 +30,51 @@ def maximum(a, b):
         return False
 
 
-def dispaly_upper(text):
+def display_upper(text):
     print(text.upper())
 
+# display_upper("hello world")
 
+
+"""
+Написать функцию math_operation которая принимает 
+3 аргумента a b и operation. В зависимости от операции 
+выводит результат математической операции
+"""
+def math_operation(a, b, operation="+"):
+    if operation == '+':
+        return a + b
+    elif operation == '-':
+        return a - b
+    elif operation == '*':
+        return a * b
+    elif operation == "/":
+        return a / b
+    else:
+        "incorrect operation"
+
+# print(math_operation(5, 10, "+")) # 15
+# print(math_operation(5, 10, "-")) # -5
+# print(math_operation(5, 10, "*")) # 50
+# print(math_operation(5, 10)) # 15
+
+
+"""
+Напишите функцию max_in_list, которая принимает 
+список чисел и возвращает максимальный элемент
+"""
+
+def max_in_list(inner_list):
+    s = inner_list[0]
+    for i in inner_list:
+        if s < i:
+            s = i
+    return s
+
+my_list = [0, 4, 5, 3, 7, 9, 2]
+my_list_2 = [0, 4, 5, 3, 7, 9, 2, 22]
+my_list_3 = [0, 4, 5, 36, 7, 9, 2, 22]
+
+print(max_in_list(my_list)) # 9
+print(max_in_list(my_list_2)) # 22
+print(max_in_list(my_list_3)) # 36
