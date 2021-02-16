@@ -71,10 +71,21 @@ def max_in_list(inner_list):
             s = i
     return s
 
+def min_in_list(inner_list):
+    s = inner_list[0]
+    for i in inner_list:
+        if s > i:
+            s = i
+    return s
+
 my_list = [0, 4, 5, 3, 7, 9, 2]
-my_list_2 = [0, 4, 5, 3, 7, 9, 2, 22]
-my_list_3 = [0, 4, 5, 36, 7, 9, 2, 22]
+my_list_2 = [4, 5, 3, 7, 9, 2, 22]
+my_list_3 = [0, 4, -5, 36, 7, 9, 2, 22]
 
 print(max_in_list(my_list)) # 9
 print(max_in_list(my_list_2)) # 22
 print(max_in_list(my_list_3)) # 36
+
+print(min_in_list(my_list)) # 0
+print(min_in_list(my_list_2)) # 2
+print(min_in_list(my_list_3)) # -5
