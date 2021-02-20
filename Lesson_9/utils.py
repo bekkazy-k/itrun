@@ -59,3 +59,36 @@ def game(from_number, to_number, cnt):
         print(f"Поздравляю, ты угадал число за {count_tries + 1} раз")
     else:
         print("Ты проиграл, попробуй еще раз!")
+
+
+def my_func(townspeople, candidates):
+    cnt = len(townspeople)
+    result = dict()
+
+    for i in candidates:
+        result[i] = 0
+
+    while True:
+        if len(townspeople) <= 0:
+            break
+
+        name = input("Введите ваше имя: ")
+        if name == "exit":
+            break
+
+        if name in townspeople:
+            c = input("Выберите кандитата: " + ", ".join(candidates) + " : ")
+            if c in candidates:
+                # result[c] = result[c] + 1
+                result[c] += 1
+                townspeople.remove(name)
+            else:
+                print(f"Имени {c} нет в списке кандидатов. Проверьте корректность")
+        else:
+            print(f"Имени {name} нет в списке голосующих. Проверьте корректность")
+
+    if len(townspeople) > 0:
+        cnt = cnt - len(townspeople)
+
+    for key, value in result.items():
+        print(f"За кандидата {key} проголосовало {value} людей. Это {(value / cnt) * 100}% избирателей")
