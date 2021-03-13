@@ -1,0 +1,56 @@
+html, head, body{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: aqua;
+}
+h1, h2, h3 {
+    display: inline;
+}
+h1{
+    color: red;
+    background-color: #888;
+}
+h2{
+    color: blue;
+}
+p{
+    color: #555;
+}
+.p1{
+    color: chartreuse;
+    /* border: 2px solid red; */
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+}
+.p2{
+    text-align: center;
+    font-size: 22px;
+}
+.p3{
+    text-align: right;
+}
+.my_img{
+    width: 300px;
+    height: auto;
+}
+
+.row::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.d1{
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.d2{
+    border: 1px solid blue;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
