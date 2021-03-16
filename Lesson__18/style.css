@@ -1,0 +1,41 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    
+}
+.sidebar{
+    background-color: blue;
+    float: left;
+    width: 30%;
+}
+.content{
+    background-color: green;
+    float: left;
+    width: 70%;
+}
+.row::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.avatar{
+    width: auto;
+    height: 200px;
+}
+.userinfo{
+    text-align: center;
+}
+.avatar-block{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url('./Ryan-Reynolds-in-Deadpool.jpeg');
+    background-size: cover;
+    background-position-x: center; 
+    margin-top: 30px;
+}
