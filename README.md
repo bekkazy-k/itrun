@@ -120,4 +120,3 @@ Askat Baktybekov
 | hasattr() |  | 
 | max() |  | 
 | round() |  |
-Askat Baktybekov
