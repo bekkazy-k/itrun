@@ -117,3 +117,5 @@
 | hasattr() |  | 
 | max() |  | 
 | round() |  |
+Askat Baktybekov
+I'm ninja
