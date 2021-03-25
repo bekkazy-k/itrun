@@ -4,4 +4,14 @@
 """
 
 def sum_func(a, b):
-    return a + b
+    if type(a) or type(b) != int or str:
+        return False
+    return int(a) + int(b)
+print(sum_func(5, 6))
+
+
+"""
+num_is_palindrome
+"""
+def num_is_palindrome():
+    pass
