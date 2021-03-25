@@ -3,11 +3,15 @@
 Обработать все возможные ошибки
 """
 
+
 def sum_func(a, b):
-    if type(a) or type(b) != int or str:
+    if type(a) and type(b) not in(str, int):
         return False
-    return int(a) + int(b)
-print(sum_func(5, 6))
+
+    try:
+        return int(a) + int(b)
+    except:
+        return False
 
 
 """

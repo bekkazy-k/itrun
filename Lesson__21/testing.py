@@ -25,6 +25,9 @@ class TestSumFunc(unittest.TestCase):
     def test_dict(self):
         self.assertEqual(sum_func(5, {}), False)
 
+    def test_incorrect_str(self):
+        self.assertEqual(sum_func(5, 'khjasdfg'), False)
+
 
 class TestNumIsPalindrome(unittest.TestCase):
 
