@@ -17,5 +17,9 @@ def sum_func(a, b):
 """
 num_is_palindrome
 """
-def num_is_palindrome():
+def num_is_palindrome(a, b):
     pass
+    try:
+        return int(a) + int(b)
+    except:
+        return False
