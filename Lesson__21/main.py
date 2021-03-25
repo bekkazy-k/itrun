@@ -4,6 +4,14 @@
 """
 
 def sum_func(a, b):
-    return a + b
+    if type(a) and type(b) not in  (int, str):
+        return False
+
+    try:
+        return int(a) + int(b)
+    except:
+        return False
 
 print(sum_func(5, 6))
+print(sum_func("5", "6"))
+
