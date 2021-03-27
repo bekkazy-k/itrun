@@ -6,40 +6,40 @@ Akimov. D
 | Ключевое слово | Описание |
 | ------------ | ------------ |
 | False | boolen | 
-| await |  | 
-| else |  | 
-| import |  | 
-| pass |  | 
-| None |  | 
-| break |  | 
-| except |  | 
-| in |  | 
-| raise |  | 
-| True |  | 
-| class |  | 
-| finally |  | 
-| is |  | 
-| return |  | 
-| and |  | 
-| continue |  | 
-| for |  | 
-| lambda |  | 
-| try |  | 
-| as |  | 
-| def |  | 
-| from |  | 
-| nonlocal |  | 
-| while |  | 
-| assert |  | 
-| del |  | 
-| global |  | 
-| not |  | 
-| with |  | 
-| async |  | 
-| elif |  | 
-| if |  | 
-| or |  | 
-| yield |  |
+| await | задерживает  | 
+| else | known | 
+| import | known  | 
+| pass | пропусти | 
+| None | ничего  | 
+| break | стоп | 
+| except | исключение | 
+| in | known | 
+| raise |  вызов| 
+| True |  boolen| 
+| class | known | 
+| finally | like else| 
+| is | == | 
+| return | возврат  | 
+| and | known | 
+| continue | пропуск и далее | 
+| for |  known| 
+| lambda | function | 
+| try | +except | 
+| as | for alia | 
+| def | define | 
+| from | known | 
+| nonlocal |known  | 
+| while |  known| 
+| assert | true  0>-1, < == ? | 
+| del | delete | 
+| global |  known| 
+| not |  !=| 
+| with | like by | 
+| async |  for асинхрон.функ. | 
+| elif | known | 
+| if | known | 
+| or | known | 
+| yield | work with generator|
 
 ## Встроенные функции Python
 Если вы используете любую из следующих встроенных функций в качестве имени переменной, это приведет не к ошибке, а к изменению поведения этой функции:
