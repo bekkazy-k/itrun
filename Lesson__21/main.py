@@ -3,33 +3,52 @@
 Обработать все возможные ошибки
 """
 
-def sum_func(a, b):
-<<<<<<< Updated upstream
-=======
-    if type(a) and type(b) not in (str, int):
-        return False
-
->>>>>>> Stashed changes
-    try:
-        return a+b
-    except:
-<<<<<<< Updated upstream
-        pass
-=======
-        return False
+# <<<<<<< HEAD
+# def sum_func(a, b):
+# <<<<<<< Updated upstream
+# =======
+#     if type(a) and type(b) not in (str, int):
+#         return False
+#
+# >>>>>>> Stashed changes
+#     try:
+#         return a+b
+#     except:
+# <<<<<<< Updated upstream
+#         pass
+# =======
+# =======
+#
+# def sum_func(a, b):
+#     if type(a) and type(b) not in(str, int):
+#         return False
+#
+#     try:
+#         return int(a) + int(b)
+#     except:
+# >>>>>>> 5fb696cdc50456c303f78ad9902b01422a105b12
+#         return False
 
 
 """
 num_is_palindrome
 """
 def num_is_palindrome(n):
-    if n not in (int, float):
-        return False
     try:
-        if str(n)[::1] == str(n)[::-1]:
+        n = str(n)
+        if n[::1] == n[::-1]:
             return True
-    except:
         return False
+    except:
+        EOFError
+
+        # if n not in (int, float):
+    #     return False
+    # try:
+    #     if str(n)[::1] == str(n)[::-1]:
+    #         return True
+    # except:
+    #     return False
 # =======
 #     if type(a) == str:
 #         if a.isdigit():
@@ -44,4 +63,3 @@ def num_is_palindrome(n):
 #             return False
 #
 #     return a + b
->>>>>>> Stashed changes
