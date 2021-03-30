@@ -33,14 +33,15 @@
 """
 num_is_palindrome
 """
-def num_is_palindrome(n):
+def num_is_palindrome(n=0):
     try:
         n = str(n)
         if n[::1] == n[::-1]:
             return True
         return False
     except:
-        EOFError
+        return False
+
 
         # if n not in (int, float):
     #     return False
