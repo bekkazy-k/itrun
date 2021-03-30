@@ -3,10 +3,19 @@
 Обработать все возможные ошибки
 """
 
-def sum_func(x, y):
-    if x or y == int:
-        return x + y
-    else:
+
+def sum_func(a, b):
+    if type(a) and type(b) not in(str, int):
         return False
 
-print(sum_func(5, 10))
+    try:
+        return int(a) + int(b)
+    except:
+        return False
+
+
+"""
+num_is_palindrome
+"""
+def num_is_palindrome():
+    pass
